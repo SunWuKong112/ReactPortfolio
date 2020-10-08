@@ -1,11 +1,11 @@
 import React from 'react';
-// import './CSS/App.css';
+import {Link} from "react-router-dom";
 
 function Header(stuff) {
   return (
      <div className="navbar bg-secondary">
-          <nav className="dropdown">
-               <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{stuff.pageName}</button>
+          <nav>
+               <h2 >{stuff.pageName}</h2>
                
                <div className="dropdown-menu" aria-labelledby="dropdownMenuLink" />
                {stuff.pageName !== "Home" ? <a className="dropdown-item" href="home.html">Home</a>: <p></p>}
