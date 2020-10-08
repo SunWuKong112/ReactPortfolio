@@ -14,32 +14,36 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './CSS/App.css';
 
 function App() {
-  const[PageName, setPageName] = useState("RickRoll");
+  const[PageName, setPageName] = useState("Splash");
   const height = use100vh();
   const imageHeight = height*2;
 
   return (
     <div>
-      {PageName === "Splash" ? <div style={{backgroundImage: `url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffc05.deviantart.net%2Ffs71%2Ff%2F2012%2F333%2Fd%2F7%2Fview_2142_by_tituslunter-d5mjly4.jpg&f=1&nofb=1")`, backgroundSize:imageHeight, height:height}}>
-        <SplashPage onClick={(val)=>{
-          setPageName(val);
-        }}/>
-      </div>
+      {PageName === "Splash" ? 
+        <div style={{backgroundImage: `url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffc05.deviantart.net%2Ffs71%2Ff%2F2012%2F333%2Fd%2F7%2Fview_2142_by_tituslunter-d5mjly4.jpg&f=1&nofb=1")`, backgroundSize:imageHeight, height:height}}>
+          <SplashPage onClick={(v)=>{setPageName(v);}}/>
+        </div>
       :
-      <Router>
-        {PageName !== "Splash" && PageName === "Contact" || PageName === "Home" || PageName === "Portfolio"? <Header pageName={PageName}/>:<p></p>}
-        <Wrapper>
-          <Switch>
-            <Route exact path="/">
-              {PageName === "Home" ? <HomePage /> : PageName === "Portfolio" ? <PortfolioPage /> : PageName === "Contact" ? <ContactPage /> : <RickRoll />}
-            </Route>
+        <div>
+          {PageName !== "Splash" && PageName === "Contact" || PageName === "Home" || PageName === "Portfolio"? <Header onClick={(v)=> setPageName(v)}pageName={PageName}/>:<p></p>}
+          <Wrapper>
+            {PageName === "Home" ?
+              <HomePage /> 
+            : 
+            PageName === "Portfolio" ?
+              <PortfolioPage />
+            : 
+            PageName === "Contact" ?
+              <ContactPage />
+            : 
+              <RickRoll />}
             {/* <Route>
               <RickRoll />
             </Route> */}
-          </Switch>
-        </Wrapper>
         {/* <Footer /> */}
-    </Router>}
+          </Wrapper>
+        </div>}
     </div>
   );
 }

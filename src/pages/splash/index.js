@@ -9,8 +9,9 @@ function Splash(stuff){
                          <div class="card">
                               <div class="container">
                                    <h1 class="title-card">Kyle Gribble</h1>
-                                   <p>Web development</p>
-                                        <button onClick={(e)=>stuff.onClick("Home")}>Enter</button>
+                                   <h4>Web developmer</h4>
+                                   <h4>JavaScript specialist</h4>
+                                   <button onClick={(e)=>stuff.onClick("Home")}>Enter</button>
                               </div>
                          </div>
                     </div>
