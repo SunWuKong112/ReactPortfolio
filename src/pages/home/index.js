@@ -1,14 +1,16 @@
 import React from 'react';
+import { use100vh } from 'react-div-100vh';
 
 function HomePage(){
      return (
           <div id="allContent">
                <article id="article">
-                    <section class="container">
+                    <section>
                          <div class="row">
                               <div class="col-6" style={
                                    {
                                         marginRight: 15,
+                                        marginLeft: 45,
                                         float: "left"
                                    }
                                                             }>
@@ -34,6 +36,7 @@ function HomePage(){
                                    </div>
                               </div>
                          </div>
+                         <div className="container">
                          <div class="row">
                                <br /><br /><br />Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis eius earum quos illum nihil quibusdam mollitia dolores cum, temporibus dolorum veritatis. Pariatur placeat praesentium provident! Earum vitae possimus at accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam odio excepturi quos nulla fugit nostrum reprehenderit perferendis consequuntur nemo atque? Saepe quibusdam omnis quidem eos iste!
                               
@@ -44,57 +47,58 @@ function HomePage(){
                                              textAlign: "center"
                                         }
                                                   }>My code is...</h2>
-                              </div>
-                              <br /><br />
-                              <div class="row">
-                               <div class="col-md-4">
-                                   <div class="flip-card">
-                                        <div class="flip-card-inner">
-                                          <div class="flip-card-front">
-                                               <img  src="https://i.stack.imgur.com/WRL00.jpg" id="coverImage" style={{marginRight: 15, float: "left"}} height="200px" width="300px" alt="Avatar" />
-                                             </div>
-                                             <div class="flip-card-back">
-                                                  <h2>clean</h2>
-                                                  <p></p>
-                                                  <p></p>
-                                          </div>
-                                        </div>
                                    </div>
-                               </div>
-                              <div class="col-md-4 col-sm-12">
-                                   <div class="flip-card">
-                                        <div class="flip-card-inner">
-                                             <div class="flip-card-front">
-                                                  <img  src="https://i.stack.imgur.com/WRL00.jpg" id="coverImage" style={{marginRight: 15, float: "left"}} height="200px" width="300px" alt="" />
-                                             </div>
-                                             <div class="flip-card-back">
-                                                  <h2>efficient</h2>
-                                                  <p></p>
-                                                  <p></p>
-                                             </div>
-                                        </div>
-                                   </div>
-                              </div>
-                              <div class="col-md-4">
-                                   <div class="flip-card">
-                                        <div class="flip-card-inner">
-                                             <div class="flip-card-front">
-                                                  <img  src="https://i.stack.imgur.com/WRL00.jpg" id="coverImage" style={{marginRight: 15, float: "left"}} height="200px" width="300px" alt="" />
-                                             </div>
-                                             <div class="flip-card-back">
-                                                  <h2>minimal</h2>
-                                                  <p></p>
-                                                  <p></p>
+                                   <br /><br />
+                                   <div class="row">
+                                   <div class="col-md-4">
+                                        <div class="flip-card">
+                                             <div class="flip-card-inner">
+                                                  <div class="flip-card-front">
+                                                       <img  src="https://i.stack.imgur.com/WRL00.jpg" id="coverImage" style={{marginRight: 15, float: "left"}} height="200px" width="300px" alt="Avatar" />
+                                                  </div>
+                                                  <div class="flip-card-back">
+                                                       <h2>clean</h2>
+                                                       <p></p>
+                                                       <p></p>
                                                   </div>
                                              </div>
                                         </div>
                                    </div>
-                              </div>
+                                   <div class="col-md-4 col-sm-12">
+                                        <div class="flip-card">
+                                             <div class="flip-card-inner">
+                                                  <div class="flip-card-front">
+                                                       <img  src="https://i.stack.imgur.com/WRL00.jpg" id="coverImage" style={{marginRight: 15, float: "left"}} height="200px" width="300px" alt="" />
+                                                  </div>
+                                                  <div class="flip-card-back">
+                                                       <h2>efficient</h2>
+                                                       <p></p>
+                                                       <p></p>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-md-4">
+                                        <div class="flip-card">
+                                             <div class="flip-card-inner">
+                                                  <div class="flip-card-front">
+                                                       <img  src="https://i.stack.imgur.com/WRL00.jpg" id="coverImage" style={{marginRight: 15, float: "left"}} height="200px" width="300px" alt="" />
+                                                  </div>
+                                                  <div class="flip-card-back">
+                                                       <h2>minimal</h2>
+                                                       <p></p>
+                                                       <p></p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
 
 
-                               <br /><br />
+                                   <br /><br />
                                
-                               Animi voluptas asperiores, quia distinctio labore ratione cumque blanditiis quae sint, incidunt iure voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci ipsum consequuntur quas, voluptas quasi itaque, molestias natus quia sequi obcaecati cumque sunt, quisquam illum ut? Eveniet, tempore? Vero, illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam pariatur debitis magni dolores ea vitae modi quam, accusamus aspernatur eligendi odio esse nesciunt quae officia molestiae, atque possimus eos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias suscipit obcaecati rem eius reprehenderit. Eum dolorum a fugiat dolorem, assumenda blanditiis!
+                                   Animi voluptas asperiores, quia distinctio labore ratione cumque blanditiis quae sint, incidunt iure voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci ipsum consequuntur quas, voluptas quasi itaque, molestias natus quia sequi obcaecati cumque sunt, quisquam illum ut? Eveniet, tempore? Vero, illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam pariatur debitis magni dolores ea vitae modi quam, accusamus aspernatur eligendi odio esse nesciunt quae officia molestiae, atque possimus eos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias suscipit obcaecati rem eius reprehenderit. Eum dolorum a fugiat dolorem, assumenda blanditiis!
+                              </div>
                          </div>
                          <div id="paralax"></div>
                          <div class="container">
