@@ -1,9 +1,9 @@
 import React, {useRef} from 'react';
-const inputRef = useRef();
 
 function ContactPage(){    
+     const inputRef = useRef();
      function focus(){
-          inputRef.current
+          inputRef.current.focus();
      } 
      function submit(e){
           e.preventDefault();
@@ -12,16 +12,6 @@ function ContactPage(){
      }
      return(
      <div>
-          <nav class="navbar bg-secondary">
-               <nav class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" />
-                    <a class="dropdown-item" href="portfolio.html">Portfolio</a>
-                    <a class="dropdown-item" href="home.html">Home</a>
-               </nav>
-               <h1>Contact me</h1>
-          </nav>
-          
            {/*Section heading*/}
           <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
           {/*Section description*/}
@@ -51,12 +41,12 @@ function ContactPage(){
 
         {/*Grid column*/}
           <div class="col-lg-4 col-md-12">
-               <form ref={inputRef} id="contact-form" name="contact-form" onSubmit={submit}>
+               <form render={()=>focus()} id="contact-form" name="contact-form" onSubmit={submit}>
                 {/*Grid row*/}
                      <div class="row">
                     {/*Grid column*/}
                          <div class="col-md-6">
-                                 <input type="text" id="name" name="name" class="form-control" />
+                                 <input ref={inputRef} type="text" id="name" name="name" class="form-control" />
                               <label for="name" class="">Your name</label>
                          </div>
                     {/*Grid column*/}
