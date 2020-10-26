@@ -40,20 +40,21 @@ function ContactPage(){
     
 
         {/*Grid column*/}
+        <div class="col-lg-4 col-md-12"></div>
           <div class="col-lg-4 col-md-12">
                <form render={()=>focus()} id="contact-form" name="contact-form" onSubmit={submit}>
                 {/*Grid row*/}
                      <div class="row">
                     {/*Grid column*/}
-                         <div class="col-md-6">
-                                 <input ref={inputRef} type="text" id="name" name="name" class="form-control" />
-                              <label for="name" class="">Your name</label>
+                         <div className="col-md-6">
+                                 <input ref={inputRef} type="text" id="name" nameName="name" class="form-control" />
+                              <label for="name" className="">Your name</label>
                          </div>
                     {/*Grid column*/}
 
                     {/*Grid column*/}
-                         <div class="col-md-6">
-                                 <input type="text" id="email" name="email" class="form-control" />
+                         <div className="col-md-6">
+                                 <input type="text" id="email" name="email" className="form-control" />
                                  <label for="email" class="">Your email</label>
                          </div>
                     {/*Grid column*/}

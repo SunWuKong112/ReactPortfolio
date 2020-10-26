@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import {use100vh, use100vj} from "react-div-100vh";
+import use100vh from "react-div-100vh";
 import Header from "./Components/header";
 import Wrapper from "./Components/Wrapper";
 import Footer from "./Components/Footer.js";
@@ -9,14 +9,13 @@ import ContactPage from "./pages/contact";
 import PortfolioPage from "./pages/portfolio";
 import SplashPage from "./pages/splash";
 import RickRoll from "./pages/RickRoll";
-import {Splash, Home, Contact, Portfolio} from "./variables/pathNames";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './CSS/App.css';
 
 function App() {
   const[PageName, setPageName] = useState("Splash");
   const height = use100vh();
-  const imageHeight = height*2;
+  const imageHeight = height;
 
   return (
     <div>
@@ -26,7 +25,7 @@ function App() {
         </div>
       :
         <div>
-          {PageName !== "Splash" && PageName === "Contact" || PageName === "Home" || PageName === "Portfolio"? <Header onClick={(v)=> setPageName(v)}pageName={PageName}/>:<p></p>}
+          {PageName !== "Splash" && PageName === "Contact" || PageName === "Home" || PageName === "Portfolio"? <Header onClick={(v)=> setPageName(v)} pageName={PageName}/>:<p></p>}
           <Wrapper>
             {PageName === "Home" ?
               <HomePage /> 
